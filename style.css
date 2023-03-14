@@ -198,6 +198,11 @@ i {
     flex-direction: column;
     justify-content: space-evenly;
   }
+
+  .card-text{
+    color: black;
+  }
+   
    
 /*footer*/
 
