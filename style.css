@@ -199,7 +199,7 @@ i {
     justify-content: space-evenly;
   }
 
-  .card-text{
+  .card-text, .card-title{
     color: black;
   }
    
