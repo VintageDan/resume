@@ -14,7 +14,12 @@
 </head>
 <div class="header">
     <a href="#default" class="logo">Dan Platten</a>
-    <div class="header-right">
+        <h2 class="mode-status">Currently in Light Mode</h2>
+        <label class="toggle-switch">
+          <input type="checkbox" id="mode-toggle">
+          <span class="slider"></span>
+        </label>
+     <div class="header-right">
       <a class="active" href="#home">Home</a>
       <a href="#contact">Contact</a>
       <a href="#about">About</a>
@@ -26,7 +31,7 @@
     <main>
        <section class="left">
             <div class="left-image">
-                <img src="./home-img.jpg" alt="Profile-picture-Dan-Platten" height="500" width="300">
+                <img src="images/home-img.jpg" alt="Profile-picture-Dan-Platten" height="500" width="300">
                 <h2>Dan Platten</h2>
             </div>
             <div class="personal">
@@ -147,17 +152,42 @@
        </section>
     </main>
 
+    
+<section class="photography">
+  <div class="container">
+    <h2>My Personal Photography</h2>
+    <div id="slider">
+       
+      <img src="IMG_DP1.jpg" alt="cloisters">
+      <img src="IMG_DP3.jpg" alt="woodland">
+      <img src="IMG_DP4.jpg" alt="bridge">
+      <img src="IMG_DP5.jpg" alt="wedding">
+      <img src="IMG_DP2.jpg" alt="Dan Platten">
+      <img src="IMG_6.jpg" alt="Model">
+      <img src="IMG_7.jpg" alt="Bridge Sunset">
+      <img src="IMG_8.jpg" alt="Concert">
+      <img src="IMG_9.jpg" alt="Boats">
+      <img src="IMG_10.jpg" alt="Bee in Flower">
+      <img src="IMG_11.jpg" alt="Boats">
+
+      <button id="prev">&lt;</button>
+      <button id="next">&gt;</button>
+    </div>
+  </div>
+</section>
+
+
     <main class="main container">
         <section class="my-progress mt-4 mb-3">
           <h2>My Progress so far...</h2>
           <div class="card-group">
           <div class="card row col4" style="width: 18rem;">
-      <img height="228.42pxpx" src="DLpage.jpg" class="card-img-top" alt="img1">
+      <img height="228.42pxpx" src="images/landing-page.JPG" class="card-img-top" alt="img1">
       <div class="card-body">
         <h5 class="card-title">My First Page</h5>
         <p class="card-text">Starting off with just basic HTML. My first landing page.</p>
     
-        <a href="https://codepen.io/VintageDan/pen/xxJpmLL" class="btn btn-secondary" target="_blank">Read More</a>
+        <a href="https://codepen.io/VintageDan/pen/QWBaoOZ" class="btn btn-secondary" target="_blank">Read More</a>
       </div>
     </div>
           <div class="card row col4" style="width: 18rem;">
@@ -205,6 +235,6 @@
         <p>Copywrite @VintageDan 2023</p>
 
     </footer>
-    
+    <script src="main.js"></script>
 </body>
 </html>
