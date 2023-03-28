@@ -61,12 +61,7 @@ function auto(){
   target = current + buffer;
 }
 
-setInterval(timeloop, () {
-  addClassActive(index)
-  index = (index+1)%total
-  }, 2000);
-
-//setInterval(timeLoop, 100);
+setInterval(timeLoop, 100);
 
 //light/dark//
 
