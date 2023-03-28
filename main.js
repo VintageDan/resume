@@ -2,14 +2,15 @@
 
 // Variables
 const images = document.querySelectorAll("img"); // array of the images
-let index i = 0; 
+let index = 0; 
 const prev = document.querySelector("#prev"); 
 const next = document.querySelector("#next"); 
-const active = "active" // 
+const active = "active" 
 
 // Functions
 function showImg(i){
-    
+  // Function to show images
+  
   images.forEach(image => image.classList.remove(active))
 
   images[i].classList.add(active)
