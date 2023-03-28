@@ -61,7 +61,7 @@ function auto(){
   target = current + buffer;
 }
 
-setInterval(function () {
+setInterval(timeloop, () {
   addClassActive(index)
   index = (index+1)%total
   }, 2000);
