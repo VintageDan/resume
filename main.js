@@ -1,16 +1,15 @@
 /* image slider project*/
 
 // Variables
-const images = document.querySelectorAll("img"); // This is an array of the images
-let index = 0; // This is the index of the image array that I want to show
-const prev = document.querySelector("#prev"); // This is a reference to the [<] button
-const next = document.querySelector("#next"); // This is a reference to the [>] button
+const images = document.querySelectorAll("img"); // array of the images
+let index i = 0; 
+const prev = document.querySelector("#prev"); 
+const next = document.querySelector("#next"); 
 const active = "active" // 
 
 // Functions
 function showImg(i){
-  // Function to show images
-  
+    
   images.forEach(image => image.classList.remove(active))
 
   images[i].classList.add(active)
