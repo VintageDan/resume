@@ -18,9 +18,7 @@ function showImg(i){
 
 // Event handlers
 next.addEventListener("click", function(){
-  // When the user clicks next I want to add 1 to the index 
   index = (index + 1) % images.length
-  // and then call my function to update the active image
   showImg(index);
   pause(); 
 })
@@ -63,9 +61,12 @@ function auto(){
   target = current + buffer;
 }
 
+setInterval(function () {
+  addClassActive(index)
+  index = (index+1)%total
+  }, 2000);
 
-// setInterval is a function that is called constantly with a delay
-setInterval(timeLoop, 100);
+//setInterval(timeLoop, 100);
 
 //light/dark//
 
