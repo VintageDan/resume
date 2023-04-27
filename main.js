@@ -1,11 +1,11 @@
 /* image slider project*/
 
 // Variables
-const images = document.querySelectorAll("img"); // array of the images
-let index = 0; 
-const prev = document.querySelector("#prev"); 
-const next = document.querySelector("#next"); 
-const active = "active" 
+const images = document.querySelectorAll("img"); // This is an array of the images
+let index = 0; // This is the index of the image array that I want to show
+const prev = document.querySelector("#prev"); // This is a reference to the [<] button
+const next = document.querySelector("#next"); // This is a reference to the [>] button
+const active = "active" // 
 
 // Functions
 function showImg(i){
@@ -18,7 +18,9 @@ function showImg(i){
 
 // Event handlers
 next.addEventListener("click", function(){
+  // When the user clicks next I want to add 1 to the index 
   index = (index + 1) % images.length
+  // and then call my function to update the active image
   showImg(index);
   pause(); 
 })
@@ -61,6 +63,8 @@ function auto(){
   target = current + buffer;
 }
 
+
+// setInterval is a function that is called constantly with a delay
 setInterval(timeLoop, 100);
 
 //light/dark//
